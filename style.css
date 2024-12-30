@@ -28,6 +28,7 @@
   /* Border radius */
   --border-radius-1: 0.5rem; /* 8px */
   --border-radius-2: 0.75rem; /* 12px */
+  --border-radius-3: 100%;
 }
 
 @font-face {
@@ -55,11 +56,14 @@
 }
 
 /*---------------------------------- CSS reset ----------------------------------*/
-/* Box sizing rules */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+/* 2. Remove default margin */
+* {
+  margin: 0;
 }
 
 /* Prevent font size inflation */
@@ -69,18 +73,11 @@ html {
   text-size-adjust: none;
 }
 
-/* Remove default margin in favour of better control in authored CSS */
-body,
-h1,
-h2,
-p {
-  margin-block-end: 0;
-}
-
 /* Set core body defaults */
 body {
   min-height: 100vh;
   line-height: 1.5;
+  -webkit-font-smoothing: antialiased; /* Improve text rendering */
 }
 
 /* Set shorter line heights on headings */
@@ -97,4 +94,106 @@ img {
   display: block;
 }
 
+/* Avoid text overflows */
+p,
+h1,
+h2 {
+  overflow-wrap: break-word;
+}
+
 /*-------------------------------- Main stylings --------------------------------*/
+body {
+  background-color: var(--color-neutral-2);
+  color: var(--color-neutral-1);
+  font-family: "Inter";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-1);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-1);
+}
+
+.visually-hidden {
+}
+
+.vertical-gap-50 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-50);
+}
+
+.vertical-gap-200 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-200);
+}
+
+.align-items-center {
+  display: flex;
+  align-items: center;
+}
+
+.social-link-card {
+  background-color: var(--color-neutral-3);
+  border-radius: var(--border-radius-2);
+  max-width: 20rem; /* 320px */
+  padding: var(--spacing-500);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-300);
+  align-items: center;
+
+  img {
+    border-radius: var(--border-radius-3);
+  }
+
+  h2 {
+    font-size: var(--font-size-2);
+    line-height: var(--line-height-1);
+    font-weight: var(--font-weight-semi-bold);
+  }
+
+  p {
+    color: var(--color-primary-1);
+    font-weight: var(--font-weight-bold);
+  }
+
+  q {
+    text-align: center;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+
+    li {
+      width: inherit;
+    }
+  }
+
+  a {
+    color: var(--color-neutral-1);
+    text-decoration: none;
+    display: block;
+    padding: var(--spacing-150);
+    /* width: 100%;  RRC: Why not needed*/
+    border-radius: var(--border-radius-1);
+    background-color: var(--color-neutral-4);
+    font-weight: var(--font-weight-bold);
+    text-align: center;
+    transition: background-color linear 0.3s, color linear 0.3s;
+  }
+
+  a:hover {
+    background-color: var(--color-primary-1);
+    color: var(--color-neutral-4);
+  }
+}
+
+@media (min-width: 80rem) {
+  .social-link-card {
+    max-width: 24rem; /* 384px */
+  }
+}
