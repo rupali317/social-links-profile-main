@@ -56,12 +56,14 @@
 }
 
 /*---------------------------------- CSS reset ----------------------------------*/
+/* Use a more-intuitive box-sizing model */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
-/* 2. Remove default margin */
+
+/* Remove default margin */
 * {
   margin: 0;
 }
@@ -112,6 +114,7 @@ body {
   font-size: var(--font-size-1);
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height-1);
+  padding: var(--spacing-300);
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -141,11 +144,12 @@ body {
   align-items: center;
 }
 
+/* RRC: Think whether to use max-width or min-width */
 .social-link-card {
   background-color: var(--color-neutral-3);
   border-radius: var(--border-radius-2);
-  max-width: 20rem; /* 320px */
-  padding: var(--spacing-500);
+  min-width: 20rem; /* 320px */
+  padding: var(--spacing-300);
   display: flex;
   flex-direction: column;
   gap: var(--spacing-300);
@@ -185,7 +189,6 @@ body {
     text-decoration: none;
     display: block;
     padding: var(--spacing-150);
-    /* width: 100%;  RRC: Why not needed*/
     border-radius: var(--border-radius-1);
     background-color: var(--color-neutral-4);
     font-weight: var(--font-weight-bold);
@@ -199,8 +202,15 @@ body {
   }
 }
 
+@media (min-width: 48rem) {
+  .social-link-card {
+    min-width: 28.5rem; /* 456px */
+    padding: var(--spacing-500);
+  }
+}
+
 @media (min-width: 80rem) {
   .social-link-card {
-    max-width: 24rem; /* 384px */
+    min-width: 24rem; /* 384px */
   }
 }
