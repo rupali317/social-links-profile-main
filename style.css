@@ -144,7 +144,14 @@ body {
   align-items: center;
 }
 
-/* RRC: Think whether to use max-width or min-width */
+.text-align-center {
+  text-align: center;
+}
+
+.max-width-content {
+  max-width: 17rem; /* 272px */
+}
+
 .social-link-card {
   background-color: var(--color-neutral-3);
   border-radius: var(--border-radius-2);
@@ -157,6 +164,8 @@ body {
 
   img {
     border-radius: var(--border-radius-3);
+    width: 5.5rem;
+    height: 5.5rem;
   }
 
   h2 {
@@ -207,10 +216,18 @@ body {
     min-width: 28.5rem; /* 456px */
     padding: var(--spacing-500);
   }
+
+  .max-width-content {
+    max-width: 23.5rem; /* 376px */
+  }
 }
 
 @media (min-width: 80rem) {
   .social-link-card {
     min-width: 24rem; /* 384px */
+  }
+
+  .max-width-content {
+    max-width: 19rem; /* 304px */
   }
 }
