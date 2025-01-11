@@ -149,14 +149,14 @@ body {
 }
 
 .max-width-content {
-  width: 100%;
+  /* width: 100%; */
   max-width: 17rem; /* 272px */
 }
 
 .social-link-card {
   background-color: var(--color-neutral-3);
   border-radius: var(--border-radius-2);
-  width: 100%;
+  /* width: 100%; */
   max-width: 20rem; /* 320px */
   padding: var(--spacing-300);
   display: flex;
