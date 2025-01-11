@@ -75,7 +75,7 @@ Active state
 
 ### What I learned
 
-- Understood the concepts/importance related to `noreferrer` and `noopener`. Opening a link as a target blank forms a connection between child tab (new tab) and parent tab (old tab) where the the new tab has access to the information from the old tab. Without the `noopener` the new tab can redirect the old tab to a malicious site via modifying `window.opener.location`. `window.opener.location` will target the old tab. Without the `noreferrer`, the new tab has access to the old tab's URL and can have access to sensitive information. However some browsers may have these in-built values without requiring us to explicitly state the values.
+- Understood the concepts/importance related to `noreferrer` and `noopener`. Opening a link as a target blank forms a connection between child tab (new tab) and parent tab (old tab) where the new tab has access to the information from the old tab. Without the `noopener` the new tab can redirect the old tab to a malicious site by modifying `window.opener.location`, which will target the old tab. Without the `noreferrer`, the new tab has access to the old tab's URL and can have access to sensitive information. However some browsers may have these protections in-built without requiring us to explicitly state the values.
 
 ```html
 <a
