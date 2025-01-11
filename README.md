@@ -14,7 +14,6 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
   - [Built with](#built-with)
   - [Tested with](#tested-with)
   - [What I learned](#what-i-learned)
-  - [Useful resources](#useful-resources)
 - [Acknowledgement](#acknowledgement)
 - [Author](#author)
 
