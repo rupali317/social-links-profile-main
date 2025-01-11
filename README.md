@@ -85,13 +85,9 @@ Active state
 
 ```
 
-### Useful resources
-
-- [Joshua's CSS reset](https://www.joshwcomeau.com/css/custom-css-reset/), [Andy Bell's CSS reset](https://piccalil.li/blog/a-more-modern-css-reset/) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- []()
-
 ## Acknowledgement
 
+- In all my projects, I always refer to CSS reset to provide a clean/consistent slate for the CSS stylings across all the browsers. [Joshua's CSS reset](https://www.joshwcomeau.com/css/custom-css-reset/), [Andy Bell's CSS reset](https://piccalil.li/blog/a-more-modern-css-reset/)
 - I express my gratitude towards my mentor - Deborah for the insightful code review session and for suggesting improvements.
 
 ## Author
