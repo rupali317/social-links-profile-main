@@ -31,29 +31,29 @@ Users should be able to:
 ##### 1. Desktop version
 
 Default state
-![]()
+![Social links profile - default](./assets/screenshots/desktop/Social-links-profile-default.png)
 
 Hover state
-![]()
+![Social links profile - hover](./assets/screenshots/desktop/Social-links-profile-hover.png)
 
 ##### 2. Mobile version
 
 Default state
-![]()
+![Social links profile - default](./assets/screenshots/mobile/Social-links-profile-default.jpg)
 
 Active state
-![]()
+![Social links profile - active](./assets/screenshots/mobile/Social-links-profile-active.jpg)
 
 ### PageSpeed Insights results
 
-[Mobile version]()
+[Mobile version](https://pagespeed.web.dev/analysis/https-rupali317-github-io-social-links-profile-main/s7l1mjr5sr?form_factor=mobile)
 
-[Desktop version]()
+[Desktop version](https://pagespeed.web.dev/analysis/https-rupali317-github-io-social-links-profile-main/s7l1mjr5sr?form_factor=desktop)
 
 ### Links
 
-- Solution URL: [Github solution]()
-- Live Site URL: [Live URL]()
+- Solution URL: [Github solution](https://github.com/rupali317/social-links-profile-main)
+- Live Site URL: [Live URL](https://rupali317.github.io/social-links-profile-main/)
 
 ## My process
 
