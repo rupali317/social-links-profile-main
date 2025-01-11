@@ -75,15 +75,19 @@ Active state
 
 ### What I learned
 
-- TBD
+- Understood the concepts/importance related to `noreferrer` and `noopener`. Opening a link as a target blank forms a connection between child tab (new tab) and parent tab (old tab) where the the new tab has access to the information from the old tab. Without the `noopener` the new tab can redirect the old tab to a malicious site. Without the `noreferrer`, the new tabe has access to the old tab's URL and can have access to sensitive information. However some browsers may have these in-built values without requiring us to explicitly state the values.
 
 ```html
-
+<a
+  href="https://github.com/"
+  aria-label="Visit Jessica's GitHub"
+  target="_blank"
+  rel="noopener noreferrer"
+  >GitHub</a
+>
 ```
 
-```css
-
-```
+- There is a subtle difference between `width: inherit` and `width: 100%`. If the parent does not have an explicitly defined width, width: 100% will still fill the available space, while width: inherit will be more dependent on the parent's explicit width, otherwise the container with `width: inherit` will be auto if the parent's width is not stated.
 
 ## Acknowledgement
 
