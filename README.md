@@ -46,14 +46,14 @@ Active state
 
 ### PageSpeed Insights results
 
-[Mobile version](https://pagespeed.web.dev/analysis/https-rupali317-github-io-social-links-profile-main/s7l1mjr5sr?form_factor=mobile)
+[Mobile version](https://pagespeed.web.dev/analysis/https-rupali317-github-io-social-links-profile-main/ca6guo7umb?form_factor=mobile)
 
-[Desktop version](https://pagespeed.web.dev/analysis/https-rupali317-github-io-social-links-profile-main/s7l1mjr5sr?form_factor=desktop)
+[Desktop version](https://pagespeed.web.dev/analysis/https-rupali317-github-io-social-links-profile-main/ca6guo7umb?form_factor=desktop)
 
 ### Links
 
-- Solution URL: [Github solution](https://github.com/rupali317/social-links-profile-main)
-- Live Site URL: [Live URL](https://rupali317.github.io/social-links-profile-main/)
+- Solution URL: [Social links profile Github solution](https://github.com/rupali317/social-links-profile-main)
+- Live Site URL: [Social links profile live URL](https://rupali317.github.io/social-links-profile-main/)
 
 ## My process
 
